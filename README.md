@@ -67,5 +67,8 @@ python -m pip install -r requirements.txt
 streamlit run Inicio.py
 ```
 
+## Pagina Web
+- Puedes ver la pagina en el siguiente <a href='https://stock-tracker-aprmcywjeq.streamlit.app/Acciones'>link </a>
+
 ## 👤 Autor
 Este proyecto fue realizado por Martin Ferrari. Muchas gracias a todos por leer, no dudes en contactarme a mi <a href="https://www.linkedin.com/in/martin-ferrari-bb0547219/">LinkedIn</a> ante cualquier duda.
