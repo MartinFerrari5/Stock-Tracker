@@ -18,7 +18,7 @@ st.title('Stock Tracker')
 filtered_stocks_df = clean_dataset()
 filtered_stocks_df['ticker_company'] = filtered_stocks_df.index + ' - ' + filtered_stocks_df['Compañia']
 
-
+# Input para la seleccion de acciones
 options = st.multiselect(
     "Elige tu accion favorita",
     filtered_stocks_df['ticker_company'],
@@ -32,8 +32,6 @@ stock_period = period()
 
 # Resultado de la eleccion de acciones
 selected_stocks  = selected_stocks_function(options)
-
-print(selected_stocks)
 
 # Grafico de linea
 if options:
