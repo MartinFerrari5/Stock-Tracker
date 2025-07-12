@@ -58,7 +58,7 @@ def period():
         
         return st.session_state.period
     except Exception as e:
-        st.error('Error al limpiar el dataset', e)
+        st.error('Error al obtener el periodo', e)
 
 def get_ticker(options,stocks_df):
     """
@@ -82,7 +82,7 @@ def get_ticker(options,stocks_df):
             return stocks_df[stocks_df['Compañia'].isin(options)][['Compañia','Capitalizacion (USD)']]
         return stocks_df[['Compañia','Capitalizacion (USD)']]
     except Exception as e:
-        st.error('Error al limpiar el dataset', e)
+        st.error(f'Error al obtener el ticker: {e}')
 
 def selected_stocks_function(options):
     """
@@ -105,16 +105,16 @@ def selected_stocks_function(options):
         Imprime un mensaje de error  si ocurre alguna excepción.
     """
     try:
-        
-        tickers = [i[:i.find(' ')] for i in options]
-        df = []
-        for t in tickers:
-            df_new = yf.Ticker(t).history(period=st.session_state.period).reset_index()
-            df_new['Ticker'] = t
-            df.append(df_new)
-        df = pd.concat(df)
-        df['Date'] = df.Date.dt.strftime('%Y-%m-%d')
-        pivot_df = df.pivot_table(index='Date', columns='Ticker',values='Close')
-        return pivot_df
+        if options:
+            tickers = [i[:i.find(' ')] for i in options]
+            df = []
+            for t in tickers:
+                df_new = yf.Ticker(t).history(period=st.session_state.period).reset_index()
+                df_new['Ticker'] = t
+                df.append(df_new)
+            df = pd.concat(df)
+            df['Date'] = df.Date.dt.strftime('%Y-%m-%d')
+            pivot_df = df.pivot_table(index='Date', columns='Ticker',values='Close')
+            return pivot_df
     except Exception as e:
-        st.error('Error al limpiar el dataset', e)
+        st.error('Error al obtener la accion', e)
