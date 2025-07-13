@@ -29,7 +29,7 @@ Para el siguiente proyecto se hizo uso de las siguientes herramientas y libreria
 4. ***Obtencion de datos de las acciones `yfinance`***
 
 
-## 📁 Estructura del proyecto\
+## 📁 Estructura del proyecto
 
 -   *Stock-Tracker/* <br>
     ├── `Inicio.py`: Archivo que contiene el codigo de inicio de la pagina <br>
