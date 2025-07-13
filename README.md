@@ -32,7 +32,7 @@ Para el siguiente proyecto se hizo uso de las siguientes herramientas y libreria
 ## 📁 Estructura del proyecto\
 
 -   *FINAL/* <br>
-    ├── `Inicio.py/`: Archivo que contiene el codigo de inicio de la pagina <br>
+    ├── `Inicio.py`: Archivo que contiene el codigo de inicio de la pagina <br>
     ├── `pages/`: Carpeta que contiene las paginas del proyecto <br>
     │    └── `Acciones.py`: Archivo que contiene el codigo para consultar las empresas disponibles <br>
     ├── `datasets/` <br>
