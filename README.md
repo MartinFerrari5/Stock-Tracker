@@ -54,10 +54,11 @@ git clone https://github.com/MartinFerrari5/Stock-Tracker.git
 python -m venv environment_name
 ```
 
-- Activar:
-``Windows``: venv\Scripts\activate
+- Activar: <br>
 
-``Mac/Linux``: venv/bin/activate
+ ``Windows``: venv\Scripts\activate
+
+ ``Mac/Linux``: venv/bin/activate
 
 #### 2) Instalar librerias.
 ```bash
