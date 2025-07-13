@@ -45,7 +45,7 @@ Para el siguiente proyecto se hizo uso de las siguientes herramientas y libreria
 
 #### 1) Clona el repositorio:
 ```
-git clone https://github.com/MartinFerrari5/first_project.git
+git clone https://github.com/MartinFerrari5/Stock-Tracker.git
 ```
 
 - Es recomendado usar un entorno virtual (venv):
@@ -54,7 +54,7 @@ git clone https://github.com/MartinFerrari5/first_project.git
 python -m venv environment_name
 ```
 
-- Activatar:
+- Activar:
 ``Windows``: venv\Scripts\activate
 
 ``Mac/Linux``: venv/bin/activate
@@ -69,7 +69,7 @@ streamlit run Inicio.py
 ```
 
 ## Pagina Web
-- Puedes ver la pagina en el siguiente <a href='https://stock-tracker-aprmcywjeq.streamlit.app/Acciones'>link </a>
+- Puedes ver la pagina en el siguiente <a href='https://stock-tracker-aprmcywjeq.streamlit.app/Acciones'>enlace </a>
 
 ## 👤 Autor
 Este proyecto fue realizado por Martin Ferrari. Muchas gracias a todos por leer, no dudes en contactarme a mi <a href="https://www.linkedin.com/in/martin-ferrari-bb0547219/">LinkedIn</a> ante cualquier duda.
