@@ -37,8 +37,8 @@ Para el siguiente proyecto se hizo uso de las siguientes herramientas y libreria
     │    └── `Acciones.py`: Archivo que contiene el codigo para consultar las empresas disponibles <br>
     ├── `datasets/` <br>
     │   └── `companies.csv`: Archivo estatico con los nombres de las acciones<br>
-    ├── `functions`
-    │     └── `stock_functions.py`: Archivo con las funciones utilizadas en todos el programa
+    ├── `functions` <br>
+    │     └── `stock_functions.py`: Archivo con las funciones utilizadas en todos el programa <br>
     └── `README.md`: Documentacion del proyecto <br>
 
 ## 🖊️ Instrucciones
