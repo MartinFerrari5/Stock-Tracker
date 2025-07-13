@@ -25,7 +25,7 @@ filtered_stocks_df = clean_dataset()
 st.title('Registro de Acciones')
 
 options = st.multiselect(
-    "Elige tu accion favorita",
+    "Encuentra la accion que buscas",
     filtered_stocks_df['Compañia'],
     max_selections=5,
     placeholder="Introduce el nombre de la compañia"

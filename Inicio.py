@@ -20,7 +20,7 @@ filtered_stocks_df['ticker_company'] = filtered_stocks_df.index + ' - ' + filter
 
 # Input para la seleccion de acciones
 options = st.multiselect(
-    "Elige tu accion favorita",
+    "Elige un accion para graficar su desempeño",
     filtered_stocks_df['ticker_company'],
     max_selections=3,
     placeholder="Introduce el nombre de la compañia",
